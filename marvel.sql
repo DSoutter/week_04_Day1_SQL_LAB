@@ -55,14 +55,14 @@ INSERT INTO movies (title, year, show_time) VALUES ('Black Panther', 2018, '21:0
 SELECT * FROM movies;
 
 -- 2.  Return ONLY the name column from the 'people' table
-SELECT name from people;
+SELECT name FROM people;
 
 -- 3.  Oops! Someone spelled Krusty The Clown's name wrong! Change it to reflect the proper spelling (Crusty should be Krusty).
 UPDATE people SET name = 'Krusty the Clown' WHERE name = 'Crusty the Clown';
-SELECT name from people;
+SELECT name FROM people;
 
 -- 4.  Return ONLY Homer Simpson's name from the 'people' table.
-SELECT name from people WHERE name = 'Homer Simpson';
+SELECT name FROM people WHERE name = 'Homer Simpson';
 
 -- 5.  The cinema is showing 'Batman Begins', but Batman is DC, not Marvel! Delete the entry from the 'movies' table.
 DELETE FROM movies WHERE title = 'Batman Begins';
@@ -89,7 +89,7 @@ DELETE FROM movies WHERE title IN ('Iron Man', 'Iron Man 2', 'Iron Man 3');
 SELECT * FROM movies;
 
 -- Return all of the films ordered by start time (will need to research ORDER BY)
-SELECT * from movies ORDER BY show_time;
+SELECT * FROM movies ORDER BY show_time;
 
 -- Count the number of films released in each year (will need to research GROUP BY)
 SELECT COUNT(title), year FROM movies GROUP BY year;

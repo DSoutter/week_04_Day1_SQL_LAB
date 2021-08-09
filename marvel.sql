@@ -83,3 +83,8 @@ SELECT * FROM movies;
 SELECT show_time FROM movies WHERE title = 'Iron Man 2';
 UPDATE movies SET show_time = '20:45'  WHERE title = 'Iron Man 3';
 SELECT show_time FROM movies WHERE title = 'Iron Man 3';
+
+-- 10. YOLO
+DELETE FROM movies WHERE title IN ('Iron Man', 'Iron Man 2', 'Iron Man 3');
+SELECT * FROM movies;
+

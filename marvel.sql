@@ -65,8 +65,12 @@ SELECT name from people;
 SELECT name from people WHERE name = 'Homer Simpson';
 
 -- 5.  The cinema is showing 'Batman Begins', but Batman is DC, not Marvel! Delete the entry from the 'movies' table.
+DELETE from movies WHERE title = 'Batman Begins';
+SELECT * from movies;
 
 -- 6.  We forgot one of the main characters! Add Bart Simpson to the 'people' table
+INSERT INTO people (name) VALUES ('Bart Simpson');
+SELECT * from people;
 
 -- 7.  Eric Cartman has decided to hijack our movie evening, Remove him from the table of people.
 

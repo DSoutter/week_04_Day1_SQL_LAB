@@ -88,3 +88,8 @@ SELECT show_time FROM movies WHERE title = 'Iron Man 3';
 DELETE FROM movies WHERE title IN ('Iron Man', 'Iron Man 2', 'Iron Man 3');
 SELECT * FROM movies;
 
+-- Return all of the films ordered by start time (will need to research ORDER BY)
+SELECT * from movies ORDER BY show_time;
+
+-- Count the number of films released in each year (will need to research GROUP BY)
+SELECT COUNT(title), year FROM movies GROUP BY year;
